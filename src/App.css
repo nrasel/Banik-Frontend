@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.ant-select-single {
+    /* width: 100px !important; */
+}
+
+.ant-select-selector {
+    border: none !important;
+    outline: none;
+}
+
+.head-icon {
+    color: rgb(233, 69, 96);
+    font-size: 30px;
+}
+
+.icon-head {
+    justify-content: end;
+}

@@ -1,6 +1,12 @@
+import { Select } from "antd";
 import React from "react";
-import { BsSearch } from "react-icons/bs";
+import { AiOutlineUser } from "react-icons/ai";
+import { BsHandbag, BsHeart, BsSearch } from "react-icons/bs";
+import { IoIosGitCompare } from "react-icons/io";
 import { Link, NavLink } from "react-router-dom";
+const handleChange = (value) => {
+  console.log(`selected ${value}`);
+};
 // import logo from "/images/logo.svg";
 
 const Header = () => {
@@ -23,11 +29,63 @@ const Header = () => {
               </p>
             </div>
             <div className="col-6">
-              <p className="text-end text-white mb-0">
-                Hotline :
-                <a className="text-white" href="tel:+88 65837923">
-                  +88 65837923
-                </a>
+              <p style={{ color: "black" }} className="text-end  mb-0">
+                <Select
+                  defaultValue="United States"
+                  style={{
+                    width: "auto",
+                  }}
+                  onChange={handleChange}
+                  options={[
+                    {
+                      value: "United States",
+                      label: "United States",
+                    },
+                    {
+                      value: "Bangladesh",
+                      label: "Bangladesh",
+                    },
+                    {
+                      value: "India",
+                      label: "India",
+                    },
+                  ]}
+                />
+                <Select
+                  className="mx-3"
+                  defaultValue="USD"
+                  style={{
+                    width: "auto",
+                  }}
+                  onChange={handleChange}
+                  options={[
+                    {
+                      value: "USD",
+                      label: "USD",
+                    },
+                    {
+                      value: "BDT",
+                      label: "BDT",
+                    },
+                  ]}
+                />
+                <Select
+                  defaultValue="English"
+                  style={{
+                    width: "auto",
+                  }}
+                  onChange={handleChange}
+                  options={[
+                    {
+                      value: "Bangla",
+                      label: "Bangla",
+                    },
+                    {
+                      value: "English",
+                      label: "English",
+                    },
+                  ]}
+                />
               </p>
             </div>
           </div>
@@ -35,7 +93,7 @@ const Header = () => {
       </header>
       <header className="header-upper py-3">
         <div className="container">
-          <div className="row align-items-center">
+          <div className="row d-flex justify-content-end align-items-center">
             <div className="col-2">
               <h1>
                 <Link className="text-white">
@@ -58,50 +116,34 @@ const Header = () => {
               </div>
             </div>
             <div className="col-6">
-              <div className="header-upper-links d-flex align-items-center justify-content-between">
+              <div className="header-upper-links d-flex align-items-center justify-content-end gap-5">
                 <div>
-                  <Link
-                    to="/compare-product"
-                    className="d-flex align-items-center gap-10 text-white"
-                  >
-                    <img src="/images/compare.svg" alt="wishlist" />
-                    <p className="mb-0">
-                      Compare <br /> Product
-                    </p>
+                  <Link to="/compare-product" className="">
+                    <IoIosGitCompare className="head-icon" />
                   </Link>
                 </div>
                 <div>
                   <Link
                     to="/wishlist"
-                    className="d-flex align-items-center gap-10 text-white"
+                    className="d-flex align-items-center  text-white"
                   >
-                    <img src="/images/wishlist.svg" alt="wishlist" />
-                    <p className="mb-0">
-                      Favourite <br /> Wishlist
-                    </p>
-                  </Link>
-                </div>
-                <div>
-                  <Link
-                    to="/login"
-                    className="d-flex align-items-center gap-10 text-white"
-                  >
-                    <img src="/images/user.svg" alt="user" />
-                    <p className="mb-0">
-                      Log in <br /> My Account
-                    </p>
+                    <BsHeart className="head-icon" />
                   </Link>
                 </div>
                 <div>
                   <Link
                     to="cart"
-                    className="d-flex align-items-center gap-10 text-white"
+                    className="d-flex align-items-center  text-white"
                   >
-                    <img src="/images/cart.svg" alt="cart" />
-                    <div className="d-flex flex-column gap-10">
-                      <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">$ 500</p>
-                    </div>
+                    <BsHandbag className="head-icon" />
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    to="/login"
+                    className="d-flex align-items-center  text-white"
+                  >
+                    <AiOutlineUser className="head-icon" />
                   </Link>
                 </div>
               </div>
@@ -123,9 +165,7 @@ const Header = () => {
                       aria-expanded="false"
                     >
                       <img src="/images/menu.svg" alt="menu" />
-                      <span className="me-5 d-inline-block">
-                        Shop Categories
-                      </span>
+                      <span className="me-5 d-inline-block">Categories</span>
                     </button>
                     <ul className="dropdown-menu">
                       <li>
