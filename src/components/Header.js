@@ -137,6 +137,7 @@ const Header = () => {
                   >
                     <BsHandbag className="head-icon" />
                   </Link>
+                  <h2></h2>
                 </div>
                 <div>
                   <Link
