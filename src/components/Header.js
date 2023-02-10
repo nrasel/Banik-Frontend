@@ -1,6 +1,7 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
+// import logo from "/images/logo.svg";
 
 const Header = () => {
   return (
@@ -10,7 +11,15 @@ const Header = () => {
           <div className="row">
             <div className="col-6">
               <p className="text-white mb-0">
-                Free Shipping Over $100 & Free Returns
+                <Link className="top-text" to="/">
+                  Account
+                </Link>
+                <Link className="mx-3 top-text" to="/">
+                  Track Order
+                </Link>
+                <Link className="top-text" to="/">
+                  Support
+                </Link>
               </p>
             </div>
             <div className="col-6">
@@ -29,7 +38,9 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h1>
-                <Link className="text-white">PandaE</Link>
+                <Link className="text-white">
+                  <img src="/images/logo.svg" alt="" />
+                </Link>
               </h1>
             </div>
             <div className="col-4">
@@ -102,7 +113,7 @@ const Header = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <div className="menu-bottom d-flex align-items-center gap-30">
+              <div className="menu-bottom d-flex justify-content-between align-items-center gap-30">
                 <div>
                   <div className="dropdown">
                     <button
@@ -134,7 +145,7 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="menu-links">
-                  <div className="d-flex align-items-center gap-15">
+                  <div className="d-flex align-items-center  gap-15">
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/product">Our Store</NavLink>
                     <NavLink to="/blogs">Blogs</NavLink>
