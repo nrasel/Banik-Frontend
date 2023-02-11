@@ -21,3 +21,8 @@
 .icon-head {
     justify-content: end;
 }
+
+.help-bg {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
