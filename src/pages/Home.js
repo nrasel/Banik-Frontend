@@ -1,11 +1,12 @@
 import Helmet from "helmet";
 import React from "react";
 import Container from "../components/Container";
+import ProductCard from "../components/ProductCard";
 import { services } from "../utils/Data";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#f8f8f8" }}>
       <Helmet>
         <title>Home</title>
       </Helmet>
@@ -84,6 +85,17 @@ const Home = () => {
               ))}
             </div>
           </div>
+        </div>
+      </Container>
+      <Container class1="featured-wrapper py-5 home-wrapper-2">
+        <div className="row ">
+          <div className="col-12">
+            <h3 className="section-heading">Top Collection</h3>
+          </div>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
       </Container>
     </div>

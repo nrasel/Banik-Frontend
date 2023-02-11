@@ -118,7 +118,6 @@ const Header = () => {
             <div className="col-6">
               <div className="header-upper-links d-flex align-items-center justify-content-end gap-5">
                 <div>
-                  <h1></h1>
                   <Link to="/compare-product" className="">
                     <IoIosGitCompare className="head-icon" />
                   </Link>
