@@ -309,4 +309,17 @@ footer:not(:first-child) {
   cursor: pointer;
 }
 
+.row>* {
+  padding-right: 0 !important;
+}
+
 /* count down section end */
+
+/* special products start */
+.special-product-card {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* special products end */

@@ -59,9 +59,10 @@ const ProductCard = ({ grid }) => {
                 width: "130px",
                 margin: "auto",
               }}
-              className="border-0 py-2 px-3"
+              className="border-0 py-2 d-flex align-items-center justify-content-center"
             >
               <img src="/images/add-cart.svg" alt="" />
+              <span className="ms-1 mb-0"> Add To Cart</span>
             </button>
           </div>
         </div>
@@ -119,9 +120,10 @@ const ProductCard = ({ grid }) => {
                 width: "130px",
                 margin: "auto",
               }}
-              className="border-0 py-2 px-3"
+              className="border-0 py-2 d-flex align-items-center justify-content-center"
             >
               <img src="/images/add-cart.svg" alt="" />
+              <span className="ms-1 mb-0"> Add To Cart</span>
             </button>
           </div>
         </div>

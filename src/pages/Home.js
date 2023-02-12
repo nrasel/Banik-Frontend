@@ -3,6 +3,7 @@ import React from "react";
 import Container from "../components/Container";
 import CountDown from "../components/CountDown";
 import ProductCard from "../components/ProductCard";
+import SpecialProducts from "../components/SpecialProducts";
 import { services } from "../utils/Data";
 
 const Home = () => {
@@ -226,6 +227,22 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* special products start here */}
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h3 className="section-heading">Sepcial Products</h3>
+          </div>
+        </div>
+        <div className="row">
+          <SpecialProducts />
+          <SpecialProducts />
+          <SpecialProducts />
+          <SpecialProducts />
+        </div>
+      </div>
+      {/* special products end here */}
     </div>
   );
 };
