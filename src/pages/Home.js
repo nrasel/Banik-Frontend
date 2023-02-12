@@ -1,10 +1,19 @@
 import Helmet from "helmet";
 import React from "react";
 import Container from "../components/Container";
+import CountDown from "../components/CountDown";
 import ProductCard from "../components/ProductCard";
 import { services } from "../utils/Data";
 
 const Home = () => {
+  const style = {
+    backgroundImage: `url('/images/app-cover.png')`,
+    height: "500px",
+    width: "100%",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  };
   return (
     <div style={{ backgroundColor: "#f8f8f8" }}>
       <Helmet>
@@ -174,6 +183,49 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      <section class="py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+              <CountDown />
+            </div>
+            <div className="col-6">
+              <div style={style}>
+                <div className="p-5">
+                  <p>MOBILE APP VERSION</p>
+                  <h2 className="mb-app">
+                    Get Our <span>Mobile App</span> <br /> It’s Make easy for
+                    you life !
+                  </h2>
+                </div>
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="me-4">
+                    <img
+                      className="img-fluid"
+                      src="images/play-store.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="">
+                    <img
+                      className="img-fluid"
+                      src="images/apple-store.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div className="mt-5 text-center">
+                  <img
+                    className="img-fluid"
+                    src="images/app-screen.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

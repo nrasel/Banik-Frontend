@@ -244,10 +244,69 @@ footer:not(:first-child) {
   font-weight: 600;
 }
 
-.item>div img {
-  /* width: 100%; */
+/* shop by brand end */
+
+/* count down section start */
+.mb-app {
+  font-weight: 600;
+  font-size: 30px;
 }
 
+.mb-app span {
+  color: rgb(233, 69, 96);
+  border-bottom: 1px solid rgb(233, 69, 96);
 
+}
 
-/* shop by brand end */
+.days,
+.hours,
+.minutes,
+.seconds {
+  background-color: white;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.d-num {
+  font-size: 32px;
+}
+
+.d-text {
+  font-size: 17px;
+}
+
+.days {
+  color: #eb5757;
+}
+
+.hours {
+  color: #2f80ed;
+}
+
+.minutes {
+  color: #219653;
+}
+
+.seconds {
+  color: #f065a8;
+}
+
+.count-first h1 {
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.count-first span {
+  border-bottom: 1px solid rgb(255 187 56);
+  letter-spacing: .025em;
+  font-size: .875rem;
+  cursor: pointer;
+}
+
+/* count down section end */
