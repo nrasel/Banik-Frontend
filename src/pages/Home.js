@@ -10,6 +10,7 @@ const Home = () => {
       <Helmet>
         <title>Home</title>
       </Helmet>
+      {/* banner */}
       <Container class1="home-wrapper-1 py-5">
         <div className="row">
           <div className="col-6">
@@ -70,6 +71,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      {/* support  */}
       <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
@@ -87,6 +89,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      {/* top selling product */}
       <Container class1="featured-wrapper py-5 home-wrapper-2">
         <div className="row ">
           <div className="col-12">
@@ -96,6 +99,79 @@ const Home = () => {
           <ProductCard />
           <ProductCard />
           <ProductCard />
+        </div>
+      </Container>
+      {/* shop by brand */}
+      <Container class1="wrapper-3 py-5">
+        <div className="row">
+          <div className="col-12">
+            <h3 className="section-heading">Shop By Brand</h3>
+          </div>
+          <div className="col-12">
+            <div className="categories ">
+              <div className="item">
+                <div>
+                  <img src="/images/brand-1.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-2.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-3.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-4.png" alt="camera" />
+                </div>
+              </div>
+
+              <div className="item">
+                <div>
+                  <img src="/images/brand-5.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-6.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-7.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-8.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-9.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-10.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-11.png" alt="camera" />
+                </div>
+              </div>
+              <div className="item">
+                <div>
+                  <img src="/images/brand-12.png" alt="camera" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Container>
     </div>

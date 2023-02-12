@@ -42,13 +42,13 @@ const ProductCard = ({ grid }) => {
           <div className="action-bar position-absolute">
             <div className="d-flex gap-15 flex-column">
               <button className="border-0 bg-transparent-custom">
+                <img src="/images/wish.svg" alt="" />
+              </button>
+              <button className="border-0 bg-transparent-custom">
                 <img src="/images/prodcompare.svg" alt="" />
               </button>
               <button className="border-0 bg-transparent-custom">
                 <img src="/images/view.svg" alt="" />
-              </button>
-              <button className="border-0 bg-transparent-custom">
-                <img src="/images/wish.svg" alt="" />
               </button>
             </div>
           </div>
@@ -101,14 +101,14 @@ const ProductCard = ({ grid }) => {
           </div>
           <div className="action-bar position-absolute">
             <div className="d-flex gap-15 flex-column">
-              <button className="border-0 bg-transparent">
+              <button className="border-0 bg-transparent-custom">
+                <img src="/images/wish.svg" alt="" />
+              </button>
+              <button className="border-0 bg-transparent-custom">
                 <img src="/images/prodcompare.svg" alt="" />
               </button>
-              <button className="border-0 bg-transparent">
+              <button className="border-0 bg-transparent-custom">
                 <img src="/images/view.svg" alt="" />
-              </button>
-              <button className="border-0 bg-transparent">
-                <img src="/images/wish.svg" alt="" />
               </button>
             </div>
           </div>

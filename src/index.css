@@ -221,3 +221,33 @@ footer:not(:first-child) {
 }
 
 /* Home part end */
+
+/* shop by brand start */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr))
+}
+
+.item>div {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  border: 1px solid #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-heading {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+
+.item>div img {
+  /* width: 100%; */
+}
+
+
+
+/* shop by brand end */
