@@ -155,8 +155,39 @@
 
 /* compare product card end */
 
-/* wishlist start here */
-/* w-full text-sm text-left text-gray-500 dark:text-gray-400 */
+* contact pages start*/ .contact-inner-wrapper {
+    padding: 20px 30px;
+    border-radius: 15px;
+    background-color: white;
+    gap: 15px;
+}
 
+.contact-inner-wrapper>div {
+    width: 48%;
+}
 
-/* wishlist end here */
+.contact-title {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+}
+
+.contact-inner-wrapper form .form-control {
+    background-color: var(--color-f5f5f7);
+    border-radius: 10px;
+    border-color: transparent;
+    padding: 10px;
+}
+
+.contact-inner-wrapper ul {
+    list-style: none;
+}
+
+.contact-inner-wrapper a,
+.contact-inner-wrapper p,
+.contact-inner-wrapper address {
+    color: var(--color-777777);
+}
+
+/* contact pages end*/

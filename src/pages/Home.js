@@ -350,7 +350,7 @@ const Home = () => {
       <div className=" py-5 container">
         <div className="row">
           <div className="col-12">
-            <div className="me-3">
+            <div className="text-center">
               <img className="img-fluid" src="/images/ads-3.png" alt="" />
             </div>
           </div>

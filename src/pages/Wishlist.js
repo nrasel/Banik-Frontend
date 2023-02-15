@@ -14,7 +14,7 @@ const Wishlist = () => {
           <div className="row">
             <div className="col-3">
               <div className="wishlist-card  position-relative">
-                <div className="wishlist-card">
+                <div className="wishlist-card bg-white">
                   <img
                     src="/images/cross.svg"
                     className="img-fluid cross position-absolute"
@@ -26,7 +26,7 @@ const Wishlist = () => {
                       src="/images/watch.jpg"
                       alt=""
                     />
-                    <div className="py-3 px-3">
+                    <div className="py-3 px-3 bg-white">
                       <h5 className="title">
                         Honor T1 7.0 1 GB ROM 7 Inch With Wi-Fi+3G Tablet
                       </h5>
@@ -38,7 +38,7 @@ const Wishlist = () => {
             </div>
             <div className="col-3">
               <div className="wishlist-card  position-relative">
-                <div className="wishlist-card">
+                <div className="wishlist-card bg-white">
                   <img
                     src="/images/cross.svg"
                     className="img-fluid cross position-absolute"
@@ -50,7 +50,7 @@ const Wishlist = () => {
                       src="/images/watch.jpg"
                       alt=""
                     />
-                    <div className="py-3 px-3">
+                    <div className="py-3 px-3 ">
                       <h5 className="title">
                         Honor T1 7.0 1 GB ROM 7 Inch With Wi-Fi+3G Tablet
                       </h5>
@@ -62,7 +62,7 @@ const Wishlist = () => {
             </div>
             <div className="col-3">
               <div className="wishlist-card  position-relative">
-                <div className="wishlist-card">
+                <div className="wishlist-card bg-white">
                   <img
                     src="/images/cross.svg"
                     className="img-fluid cross position-absolute"
