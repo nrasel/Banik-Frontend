@@ -1,7 +1,9 @@
 import Helmet from "helmet";
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import CountDown from "../components/CountDown";
+import NewArrivals from "../components/NewArrivals";
 import ProductCard from "../components/ProductCard";
 import SpecialProducts from "../components/SpecialProducts";
 import { services } from "../utils/Data";
@@ -229,7 +231,7 @@ const Home = () => {
       </section>
 
       {/* special products start here */}
-      <div className="container">
+      <Container class1="special-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Sepcial Products</h3>
@@ -241,8 +243,218 @@ const Home = () => {
           <SpecialProducts />
           <SpecialProducts />
         </div>
+      </Container>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h3 className="section-heading">Best Seller</h3>
+          </div>
+        </div>
+        <div className="row">
+          <div className="best-seller">
+            <div>
+              <div className="best-seller-image">
+                <img src="/images/saller-1.png" alt="" />
+              </div>
+              <div>
+                <Link to="/seller-page">
+                  <p>Shop BD</p>
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="best-seller-image">
+                <img src="/images/saller-2.png" alt="" />
+              </div>
+              <div>
+                <Link to="/seller-page">
+                  <p>Eecoms Shop</p>
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="best-seller-image">
+                <img src="/images/saller-3.png" alt="" />
+              </div>
+              <div>
+                <Link to="/seller-page">
+                  <p>Fusion X</p>
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="best-seller-image">
+                <img src="/images/saller-4.png" alt="" />
+              </div>
+              <div>
+                <Link to="/seller-page">
+                  <p>Rikayi Rox</p>
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="best-seller-image">
+                <img src="/images/saller-5.png" alt="" />
+              </div>
+              <div>
+                <Link to="/seller-page">
+                  <p>Habbriyi</p>
+                </Link>
+              </div>
+            </div>
+            <div>
+              <div className="best-seller-image">
+                <img src="/images/saller-6.png" alt="" />
+              </div>
+              <div>
+                <Link to="/seller-page">
+                  <p>Rayhans</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       {/* special products end here */}
+
+      {/* adds section start */}
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-12 d-flex align-items-center justify-content-center">
+            <div className="me-3">
+              <img className="img-fluid" src="/images/ads-1.png" alt="" />
+            </div>
+            <div>
+              <img className="img-fluid" src="/images/ads-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* adds section end */}
+
+      {/* new arrivals start */}
+      <Container class1="featured-wrapper py-5 home-wrapper-2">
+        <div className="row ">
+          <div className="col-12">
+            <h3 className="section-heading">New Arrivals</h3>
+          </div>
+          <NewArrivals />
+          <NewArrivals />
+          <NewArrivals />
+          <NewArrivals />
+        </div>
+      </Container>
+      {/* new arrivals end */}
+
+      {/* adds3 section start */}
+      <div className=" py-5 container">
+        <div className="row">
+          <div className="col-12">
+            <div className="me-3">
+              <img className="img-fluid" src="/images/ads-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* adds3 section end*/}
+
+      {/* popular sales start */}
+      <Container class1="featured-wrapper py-5 home-wrapper-2">
+        <div className="row ">
+          <div className="col-12">
+            <h3 className="section-heading">New Arrivals</h3>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-4">
+            <div className="d-flex p-2 bg-white align-items-center justify-content-around">
+              <div className="popular-sale-img">
+                <img src="/images/product-img-9.jpg" alt="" />
+              </div>
+              <div className="popular-sale-info">
+                <Link to="/">Xoggle aute et pariatur...</Link>
+                <p className="price">
+                  <span className="throw-line">$27.27</span>
+                  <span className="price-o">$18.73</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="d-flex p-2 bg-white align-items-center justify-content-around">
+              <div className="popular-sale-img">
+                <img src="/images/product-img-9.jpg" alt="" />
+              </div>
+              <div className="popular-sale-info">
+                <Link to="/">Xoggle aute et pariatur...</Link>
+                <p className="price">
+                  <span className="throw-line">$27.27</span>
+                  <span>$18.73</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="d-flex p-2 bg-white align-items-center justify-content-around">
+              <div className="popular-sale-img">
+                <img src="/images/product-img-9.jpg" alt="" />
+              </div>
+              <div className="popular-sale-info">
+                <Link to="/">Xoggle aute et pariatur...</Link>
+                <p className="price">
+                  <span className="throw-line">$27.27</span>
+                  <span>$18.73</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginTop: "3px" }} className="row">
+          <div className="col-4">
+            <div className="d-flex p-2 bg-white align-items-center justify-content-around">
+              <div className="popular-sale-img">
+                <img src="/images/product-img-9.jpg" alt="" />
+              </div>
+              <div className="popular-sale-info">
+                <Link to="/">Xoggle aute et pariatur...</Link>
+                <p className="price">
+                  <span className="throw-line">$27.27</span>
+                  <span className="price-o">$18.73</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="d-flex p-2 bg-white align-items-center justify-content-around">
+              <div className="popular-sale-img">
+                <img src="/images/product-img-9.jpg" alt="" />
+              </div>
+              <div className="popular-sale-info">
+                <Link to="/">Xoggle aute et pariatur...</Link>
+                <p className="price">
+                  <span className="throw-line">$27.27</span>
+                  <span>$18.73</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="d-flex p-2 bg-white align-items-center justify-content-around">
+              <div className="popular-sale-img">
+                <img src="/images/product-img-9.jpg" alt="" />
+              </div>
+              <div className="popular-sale-info">
+                <Link to="/">Xoggle aute et pariatur...</Link>
+                <p className="price">
+                  <span className="throw-line">$27.27</span>
+                  <span>$18.73</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+      {/* popular sales end */}
     </div>
   );
 };

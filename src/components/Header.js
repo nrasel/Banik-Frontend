@@ -96,7 +96,7 @@ const Header = () => {
           <div className="row d-flex justify-content-end align-items-center">
             <div className="col-2">
               <h1>
-                <Link className="text-white">
+                <Link to="/" className="text-white">
                   <img src="/images/logo.svg" alt="" />
                 </Link>
               </h1>
